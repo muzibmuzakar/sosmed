@@ -95,6 +95,10 @@
                 </div>
             </div>
         </div>
+        @foreach ($notifs as $notif)
+            <p>{{ $notif->data['comment']['body'] }}</p>
+        @endforeach
+
 
         {{-- btn add --}}
         <label title="Contact Sale" for="add-post"
